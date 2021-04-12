@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class test_script : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveSpeed;
+    public Rigidbody2D Rb;
+    
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    void FixedUpdate(){
+        float moveX = Input.GetAxisRaw
+    }
+    void ProcessInputs(){
+
+    }
+    void OnAnimatorMove(){
+
     }
 }
