@@ -14,7 +14,7 @@ public class test_script : MonoBehaviour
         
     }
     void FixedUpdate(){
-        float moveX = Input.GetAxisRaw;
+        //float moveX = Input.GetAxisRaw;
     }
     void ProcessInputs(){
 
