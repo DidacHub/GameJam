@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class KeyDoor : MonoBehaviour
 {
-    [SerializeField] private Key.KeyType keyType;
+    //[SerializeField] private Key.KeyType keyType;
 
-    private DoorAnims dorrAnims;
+    /*private DoorAnims dorrAnims;
 
     private void Awake() {
         doorAnims = GetComponent<DoorAnims>();
@@ -22,5 +22,5 @@ public class KeyDoor : MonoBehaviour
 
     public void PlayOpenFailAnim() {
         dorrAnims.PlayOpenFailAnim();
-    }
+    }*/
 }

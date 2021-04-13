@@ -5,7 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
 
-    [SerializeFiled] private KeyType keyType;
+    /*[SerializeFiled] private KeyType keyType;
 
     public enum KeyType {
         Red,
@@ -24,6 +24,6 @@ public class Key : MonoBehaviour
             case KeyType.Green:   return Color.green;
             case KeyType.Blue:   return Color.blue;
         }
-    }
+    }*/
     
 }

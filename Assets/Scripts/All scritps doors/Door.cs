@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Door : MonoBehaviour
 {
-    public BoxCollider2D door;
+    /*public BoxCollider2D door;
     private SpriteRenderer sprite;
     private bool DoorClose = true;
 
@@ -29,5 +29,5 @@ public class Door : MonoBehaviour
                 DoorClose = false;
             }
         }
-    }
+    }*/
 }

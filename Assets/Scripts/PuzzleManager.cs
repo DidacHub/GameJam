@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public UIManager uimanager;
+    /*public UIManager uimanager;
 
     public PuzzlePieza[] pieces;
 
@@ -61,6 +61,6 @@ public class PuzzleManager : MonoBehaviour
     public bool IsPuzzleCompleted()
     {
         return completed;
-    }
+    }*/
     
 }

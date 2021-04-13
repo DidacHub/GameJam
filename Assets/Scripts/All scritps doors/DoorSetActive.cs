@@ -7,7 +7,7 @@ public class DoorSetActive : MonoBehaviour
     private bool isOpen = false;
 
     public void OpenDoor() {
-        gameObject.SetActive(flase);
+        gameObject.SetActive(false);
     }
 
     public void CloseDoor() {
