@@ -236,31 +236,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6747084, y: 3.1025581}
   m_EdgeRadius: 0
---- !u!1 &2039169549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1722457730927788360, guid: b8704b0a9a6cea244bebda9f30cf40f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1854968833015239658}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2039169554
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039169549}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 69c693d50bac63c46bf40bac989e7f1a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1854968833015239658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,16 +303,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6753151993928205285, guid: b8704b0a9a6cea244bebda9f30cf40f5,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6753151993928205285, guid: b8704b0a9a6cea244bebda9f30cf40f5,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 2039169554}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8704b0a9a6cea244bebda9f30cf40f5, type: 3}
 --- !u!1001 &7606874248472498323
