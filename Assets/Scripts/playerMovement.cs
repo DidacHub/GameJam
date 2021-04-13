@@ -9,11 +9,12 @@ public class playerMovement : MonoBehaviour
     public GameObject Keycard;
     public GameObject Crucifix;
     public GameObject Wrench;
+    public Animator animator;
 
     public enum OBJECTS {KEY, KEYCARD, CRUCIFIX, WRENCH, EMPTY }
     public OBJECTS ActiveObject = OBJECTS.EMPTY;
 
-    public float moveSpeed;
+    public float moveSpeed = 5f;
 
     private bool pick;
     private string objectName;
@@ -22,7 +23,7 @@ public class playerMovement : MonoBehaviour
     private GameObject floorObject;
 
     private Rigidbody2D rb;
-    private Vector2 moveDirection;
+    Vector2 movement;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,16 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+        
+        
         pick = Interact;
         if (pick && onObject)
         {
@@ -54,11 +64,12 @@ public class playerMovement : MonoBehaviour
                 ActiveObject = OBJECTS.WRENCH;
             }
         }
+
     }
 
     void FixedUpdate()
     {
-        Move();
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         switch (ActiveObject)
         {
@@ -125,18 +136,9 @@ public class playerMovement : MonoBehaviour
         Wrench.SetActive(false);
     }
 
-    void ProcessInputs()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+    
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
-    }
-
-    void Move()
-    {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-    }
+    
     public static bool Interact
     {
         get { return Input.GetKey(KeyCode.E); }

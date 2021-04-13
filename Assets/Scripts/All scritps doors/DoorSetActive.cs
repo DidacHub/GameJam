@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorSetActive : MonoBehaviour
 {
-    private bool isOpen = false;
+    /*private bool isOpen = false;
 
     public void OpenDoor() {
         gameObject.SetActive(false);
@@ -21,5 +21,5 @@ public class DoorSetActive : MonoBehaviour
         } else {
             CloseDoor();
         }
-    }
+    }*/
 }
