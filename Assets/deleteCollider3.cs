@@ -2,30 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class keyScript : MonoBehaviour
+public class deleteCollider3 : MonoBehaviour
 {
-    private SpringJoint2D spring;
+    // Start is called before the first frame update
+    public BoxCollider2D DoorCollider;
+
     // Start is called before the first frame update
     void Start()
     {
-        spring = GetComponent<SpringJoint2D>();
-        spring.enabled = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "Card")
         {
-                spring.enabled = true;
-        }
-                
-        if (collision.gameObject.name == "ColliderMetalica")
-        {
+            GetComponent<BoxCollider2D>().enabled = false;
             Destroy(gameObject);
         }
     }

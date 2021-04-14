@@ -11,7 +11,8 @@ public class notaInteraction : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interactAction;
     public GameObject number;
-
+    public GameObject Puzzle;
+    public GameObject Image;
 
 
     void Start()
